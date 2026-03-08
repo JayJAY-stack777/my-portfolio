@@ -1,47 +1,27 @@
 <template>
-  <h1>Contact Me</h1>
+  
+    <h1>Contact Me</h1>
 
-  <form name="contact" method="POST" @submit.prevent="handleSubmit" class="form">
-    <input type="hidden" name="form-name" value="contact" />
 
-    <label>Name:</label>
-    <input type="text" name="name" v-model="form.name" required />
-    <br /><br />
+<form name="contact" method="POST" data-netlify="true" class="form">
+      <input type="hidden" name="form-name" value="contact" />
 
-    <label>Email:</label>
-    <input type="email" name="email" v-model="form.email" required />
-    <br /><br />
+      <label>Name:</label>
+      <input type="text" name="name" required />
+        <br>
+        <br>
+      <label>Email:</label>
+      <input type="email" name="email" required />
+        <br>
+        <br>
+      <label>Message:</label>
+      <textarea name="message" required></textarea>
 
-    <label>Message:</label>
-    <textarea name="message" v-model="form.message" required></textarea>
-
-    <button type="submit">Send</button>
-  </form>
-
+      <button type="submit">Send</button>
+    
+    </form>
+ 
 </template>
-
-<script setup>
-import { ref } from 'vue'
-
-const encode = (data) =>
-  Object.keys(data)
-    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
-    .join('&')
-
-async function handleSubmit() {
-  try {
-    await fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'contact', ...form.value }),
-    })
-    submitted.value = true
-    form.value = { name: '', email: '', message: '' }
-  } catch (e) {
-    error.value = true
-  }
-}
-</script>
 <style>
 .form {
   border: 2px solid #5c4033; 
