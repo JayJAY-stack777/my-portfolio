@@ -18,16 +18,10 @@
     <button type="submit">Send</button>
   </form>
 
-  <p v-if="submitted">✅ Message sent successfully!</p>
-  <p v-if="error">❌ Something went wrong. Please try again.</p>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-
-const form = ref({ name: '', email: '', message: '' })
-const submitted = ref(false)
-const error = ref(false)
 
 const encode = (data) =>
   Object.keys(data)
