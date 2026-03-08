@@ -2,28 +2,29 @@
   <div class="contact-container">
     <h1>Contact Me</h1>
 
-    <form 
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      action="/success"
-      class="form"
-    >
+    <form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  action="/success"
+  netlify
+  class="form"
+>
 
-      <input type="hidden" name="form-name" value="contact" />
+<input type="hidden" name="form-name" value="contact" />
 
-      <label for="name">Name</label>
-      <input type="text" name="name" required />
+<label>Name</label>
+<input type="text" name="name" required />
 
-      <label for="email">Email</label>
-      <input type="email" name="email" required />
+<label>Email</label>
+<input type="email" name="email" required />
 
-      <label for="message">Message</label>
-      <textarea name="message" rows="6" required></textarea>
+<label>Message</label>
+<textarea name="message" rows="6" required></textarea>
 
-      <button type="submit">Send</button>
+<button type="submit">Send</button>
 
-    </form>
+</form>
   </div>
 </template>
 <style>
