@@ -50,6 +50,16 @@ body{
   padding: 8px 15px;
   border-radius: 5px;
 }
-
+/* footer */
+footer {
+  background-color: #5C3A1E;
+  color: #f5ede0;
+  text-align: center;
+  padding: 16px;
+  font-weight: 300;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  margin: 20px;
+}
 
 </style>

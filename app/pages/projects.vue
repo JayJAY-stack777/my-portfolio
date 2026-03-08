@@ -66,5 +66,9 @@ onMounted(() => {
       <p>{{ anime.synopsis }}</p>
 
     </div>
+
+    <footer>
+    <p>Ntsika Tshuma &copy; 2026</p>
+  </footer>
   
 </template>

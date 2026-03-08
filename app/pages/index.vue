@@ -45,6 +45,10 @@ onMounted(() => {
       💨 Wind Speed: {{ windspeed }} km/h
     </p>
 
+    <footer>
+    <p>Ntsika Tshuma &copy; 2026</p>
+  </footer>
+
 </template>
 
 <style>

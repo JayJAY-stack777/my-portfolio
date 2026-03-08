@@ -21,6 +21,10 @@
     
     </form>
  
+<footer>
+    <p>Ntsika Tshuma &copy; 2026</p>
+  </footer>
+
 </template>
 <style>
 .form {
