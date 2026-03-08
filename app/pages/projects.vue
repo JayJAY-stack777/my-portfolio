@@ -72,3 +72,19 @@ onMounted(() => {
   </footer>
   
 </template>
+
+<style scoped>
+h1, h2, h3, p, ul {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+</style>
