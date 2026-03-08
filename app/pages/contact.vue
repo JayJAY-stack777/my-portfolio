@@ -1,59 +1,32 @@
 <template>
   
     <h1>Contact Me</h1>
-    <h3> 🏠Address</h3>
-    <p>
-       Ntemi Piliso St & Gwigwi Mrwebi St
-       <br>
-       Brickfields 904
-       <br>
-       Newtown
-       <br>
-       Johannesburg
-       <br>
-       2113
-    </p>
 
-        <h3>📧Email</h3>
-    <p>
-       u25571258@tuks.co.za
-       <br>
-       ntsika.tshuma.sa@gmail.com
-    </p>
-
-        <h3>☎️Phone Number</h3>
-    <p>
-       (+27) 65-104-2114
-       <br>
-       (+27) 73-194-8241
-       <br>
-       <br>
-    </p>
 
 <form name="contact" method="POST" data-netlify="true" class="form">
-      
-      <input type="hidden" name="form-name" value="contact" />
 
-      <label>Name:</label>
-      <input type="text" name="name" required />
-        <br>
-        <br>
-      <label>Email:</label>
-      <input type="email" name="email" required />
-        <br>
-        <br>
-      <label>Message:</label>
-      <textarea name="message" required></textarea>
+  <input type="hidden" name="form-name" value="contact" />
 
-      <button type="submit">Send</button>
-    
-    </form>
+  <label>Name:</label>
+  <input type="text" name="name" required />
+  <br><br>
+
+  <label>Email:</label>
+  <input type="email" name="email" required />
+  <br><br>
+
+  <label>Message:</label>
+  <textarea name="message" required></textarea>
+
+  <button type="submit">Send</button>
+
+</form>
  
 </template>
 <style>
 .form {
   border: 2px solid #5c4033; 
-  background-color: #cfc8bf; 
+  background-color:  #cfc8bf; 
   padding: 50px;
   width: 600px;
   margin: auto;
