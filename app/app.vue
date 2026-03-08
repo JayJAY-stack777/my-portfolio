@@ -52,9 +52,10 @@ body{
 }
 /* footer */
 footer {
-  background-color: #5C3A1E;
-  color: #f5ede0;
+  background-color: #eee7e2;
+  color: #241c0f;
   text-align: center;
+  width: 100%;
   padding: 16px;
   font-weight: 300;
   font-size: 0.9rem;
