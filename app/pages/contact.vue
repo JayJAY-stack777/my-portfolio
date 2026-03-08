@@ -1,27 +1,39 @@
 <template>
-  
-    <h1>Contact Me</h1>
 
+<h1>Contact Me</h1>
 
-<form name="contact" method="POST" data-netlify="true" class="form">
-      
-      <input type="hidden" name="form-name" value="contact" />
+<form 
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  netlify
+  netlify-honeypot="bot-field"
+  class="form"
+>
 
-      <label>Name:</label>
-      <input type="text" name="name" required />
-        <br>
-        <br>
-      <label>Email:</label>
-      <input type="email" name="email" required />
-        <br>
-        <br>
-      <label>Message:</label>
-      <textarea name="message" required></textarea>
+<input type="hidden" name="form-name" value="contact">
 
-      <button type="submit">Send</button>
-    
-    </form>
- 
+<p hidden>
+  <label>Don't fill this out: <input name="bot-field"></label>
+</p>
+
+<label>Name:</label>
+<input type="text" name="name" required />
+
+<br><br>
+
+<label>Email:</label>
+<input type="email" name="email" required />
+
+<br><br>
+
+<label>Message:</label>
+<textarea name="message" required></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
 </template>
 <style>
 .form {
