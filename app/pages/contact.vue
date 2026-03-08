@@ -3,22 +3,26 @@
     <h1>Contact Me</h1>
 
 
-<form name="contact" method="POST" data-netlify="true" class="form">
+<form 
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  action="/success"
+  class="form"
+>
 
-  <input type="hidden" name="form-name" value="contact" />
+<input type="hidden" name="form-name" value="contact" />
 
-  <label>Name:</label>
-  <input type="text" name="name" required />
-  <br><br>
+<label>Name:</label>
+<input type="text" name="name" required />
 
-  <label>Email:</label>
-  <input type="email" name="email" required />
-  <br><br>
+<label>Email:</label>
+<input type="email" name="email" required />
 
-  <label>Message:</label>
-  <textarea name="message" required></textarea>
+<label>Message:</label>
+<textarea name="message" required></textarea>
 
-  <button type="submit">Send</button>
+<button type="submit">Send</button>
 
 </form>
  
