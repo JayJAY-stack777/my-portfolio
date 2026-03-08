@@ -1,11 +1,11 @@
 <template>
   
-    <h1>Contact Me</h1>
+    
 
 
 <form name="contact" method="POST" data-netlify="true" class="form">
       <input type="hidden" name="form-name" value="contact" />
-
+<h1>Contact Me</h1>
       <label>Name:</label>
       <input type="text" name="name" required />
         <br>
